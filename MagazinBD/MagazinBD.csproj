@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96B8104A-7066-4F79-9C56-1FADDB13F198}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MagazinBD</RootNamespace>
+    <AssemblyName>MagazinBD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>Properties\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KlientForm.Designer.cs">
+      <DependentUpon>KlientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MagazinBDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MagazinBDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OjidanieZakazaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OjidanieZakazaForm.Designer.cs">
+      <DependentUpon>OjidanieZakazaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrForm.Designer.cs">
+      <DependentUpon>RegistrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SotrudnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SotrudnikForm.Designer.cs">
+      <DependentUpon>SotrudnikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StiralnayMashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StiralnayMashForm.Designer.cs">
+      <DependentUpon>StiralnayMashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelevizorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelevizorForm.Designer.cs">
+      <DependentUpon>TelevizorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TovarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TovarForm.Designer.cs">
+      <DependentUpon>TovarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VypolnennyiZakazForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VypolnennyiZakazForm.Designer.cs">
+      <DependentUpon>VypolnennyiZakazForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xolodilnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xolodilnik.Designer.cs">
+      <DependentUpon>Xolodilnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZakazForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZakazForm.Designer.cs">
+      <DependentUpon>ZakazForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlientForm.resx">
+      <DependentUpon>KlientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OjidanieZakazaForm.resx">
+      <DependentUpon>OjidanieZakazaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistrForm.resx">
+      <DependentUpon>RegistrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SotrudnikForm.resx">
+      <DependentUpon>SotrudnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StiralnayMashForm.resx">
+      <DependentUpon>StiralnayMashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelevizorForm.resx">
+      <DependentUpon>TelevizorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TovarForm.resx">
+      <DependentUpon>TovarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VypolnennyiZakazForm.resx">
+      <DependentUpon>VypolnennyiZakazForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xolodilnik.resx">
+      <DependentUpon>Xolodilnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZakazForm.resx">
+      <DependentUpon>ZakazForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MagazinBDDataSet.xsc">
+      <DependentUpon>MagazinBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MagazinBDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MagazinBDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MagazinBDDataSet.xss">
+      <DependentUpon>MagazinBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
